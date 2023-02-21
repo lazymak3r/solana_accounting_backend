@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@app/*": [
+        "./apps/*"
+      ],
+      "@lib/*": [
+        "./libs/*"
+      ],
+      "main/main": [
+        "libs/main/src"
+      ],
+      "main/main/*": [
+        "libs/main/src/*"
+      ]
+    },
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "esnext",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+  }
+}

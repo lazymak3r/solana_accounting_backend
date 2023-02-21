@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/api/src",
+  "monorepo": true,
+  "root": "apps/api",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/api/tsconfig.json"
+  },
+  "projects": {
+    "api": {
+      "type": "application",
+      "root": "apps/api",
+      "entryFile": "main",
+      "sourceRoot": "apps/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api/tsconfig.json"
+      }
+    },
+    "collector": {
+      "type": "application",
+      "root": "apps/collector",
+      "entryFile": "main",
+      "sourceRoot": "apps/collector/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/collector/tsconfig.json"
+      }
+    },
+    "keeper": {
+      "type": "application",
+      "root": "apps/keeper",
+      "entryFile": "main",
+      "sourceRoot": "apps/keeper/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/keeper/tsconfig.json"
+      }
+    },
+    "price": {
+      "type": "application",
+      "root": "apps/price",
+      "entryFile": "main",
+      "sourceRoot": "apps/price/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/price/tsconfig.json"
+      }
+    },
+    "websocket": {
+      "type": "application",
+      "root": "apps/websocket",
+      "entryFile": "main",
+      "sourceRoot": "apps/websocket/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/websocket/tsconfig.json"
+      }
+    },
+    "main": {
+      "type": "library",
+      "root": "libs/main",
+      "entryFile": "index",
+      "sourceRoot": "libs/main/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/main/tsconfig.lib.json"
+      }
+    }
+  }
+}
